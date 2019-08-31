@@ -6,8 +6,9 @@
  *
  *  Autor: Diego Varejão <varejaodfav@gmail.com>
  */
+import 'dotenv/config';
 
 export default {
-  secret: 'B910CE92575D5C7154BA5F166C6AE0294717AFBF3E18C7450A0948B2BA9D2CF4',
-  expireIn: '1d',
+  secret: process.env.APP_SECRET,
+  expireIn: process.env.AUTH_EXPIRES,
 };
