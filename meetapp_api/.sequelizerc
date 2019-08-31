@@ -1,0 +1,12 @@
+const { resolve } = require('path');
+
+module.exports = {
+  // Arquivo de configuração do banco de dados
+  config: resolve(__dirname, 'src', 'config', 'database.cfg.js'),
+  // Diretório de modelos do banco de dados
+  'models-path': resolve(__dirname, 'src', 'app', 'models'),
+  // Diretório de migrações de modelo do banco de dados
+  'migrations-path': resolve(__dirname, 'src', 'database', 'migrations'),
+  // Diretório de seeders para população de dados de teste do banco de dados
+  'seeders-path': resolve(__dirname, 'src', 'database', 'seeds'),
+};
